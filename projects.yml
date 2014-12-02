@@ -18,10 +18,6 @@
 # - URL to preferred feedback mechanism
 # stack: "Stack, technologies"
 # team: List of 18F team members, comma separated, with names pulled from 18F.gsa.gov team file (https://github.com/18F/18f.gsa.gov/blob/staging/_data/team.yml)
-# licenses:
-#   repo: Name of the license
-# licenseBranch:
-#   repo: Branch the license is on (default's to master)
 # links:
 # - link
 # status: "Hold" in this field (with no quotes) will hide this project from the site. Otherwise, leave blank.
@@ -44,8 +40,6 @@
   - christopher.cairns@gsa.gov
   stack: "JavaScript, Jekyll"
   team: chrisc, manger
-  licenses:
-    myra: Public Domain (CC0)
   links: https://myra.treasury.gov
   status:
 
@@ -65,7 +59,6 @@
   - sean.herron@gsa.gov
   stack:
   team: sean, victor, ben, cm, shashank, annalee, jeremy
-  licenses:
   links:
   status:
 
@@ -86,10 +79,6 @@
   - 18f/foia/issues
   stack:
   team: majma, victor, eric
-  licenses:
-    foia: Public Domain (CC0)
-    foia-hub: Public Domain (CC0)
-  licenselink: 18F/foia/blob/master/LICENSE.md
   links:
   - https://trello.com/b/D0r2UOz0/foia-scrum-board
   blog:
@@ -112,10 +101,6 @@
   - 18F/FEC/issues
   stack:
   team: majma, manger, jen, amos, sean, catherine, theresa
-  licenses:
-    openFEC: Public Domain (CC0)
-    FEC: Public Domain (CC0)
-    fec-graph-search: Public Domain (CC0)
   links:
   blog:
   - FEC
@@ -138,10 +123,6 @@
   - christopher.cairns@gsa.gov
   stack: JavaScript, Jekyll
   team: mhz, chrisc, nick
-  licenses:
-    doi-extractives-data: Public Domain (CC0)
-  licenseBranch:
-    doi-extractives-data: gh-pages
   links:
   blog:
   - eiti
@@ -161,8 +142,6 @@
   contact: raphael.villas@gsa.gov, kelly.robinson@gsa.gov
   stack: "Ruby, CSS, JavaScript/Node, Python"
   team: raphy, ehlers, robert, sasha, diego
-  licenses:
-    C2: Public Domain (CC0)
   links:
   - https://github.com/18F/Mario
   - https://github.com/18F/gsa-advantage-scrape
@@ -184,8 +163,6 @@
   - fbopen@gsa.gov
   stack: "Python, JavaScript/Node"
   team: alison, leah, mhz, kaitlin, diego
-  licenses:
-    fbopen: Public Domain (CC0)
   links:
   - https://fbopen.gsa.gov
   - https://18f.github.io/fbopen
@@ -211,8 +188,6 @@
   - josh.ruihley@gsa.gov
   stack: "Python, JavaScript"
   team: josh, kaitlin, brethauer
-  licenses:
-    mirage: Public Domain (CC0)
   links:
   - http://gsa.gov/oasis
   status:
@@ -239,8 +214,6 @@
   - api.data.gov@gsa.gov
   stack: "JavaScript (Node and Ember), Rails, nginx, elasticsearch, Varnish, redis, and MongoDB"
   team: gray
-  licenses:
-    fbopen: Public Domain (CC0)
   links:
   - https://api.data.gov
   - https://api.data.gov/metrics
@@ -269,10 +242,6 @@
   - gray.brooks@gsa.gov
   stack:
   team: gray
-  licenses:
-    API-All-the-X: Public Domain (CC0)
-  licenseBranch:
-    API-All-the-X: gh-pages
   links:
   - https://18f.github.io/API-All-the-X
   blog:
@@ -302,8 +271,6 @@
   - midas@gsa.gov
   stack: "JavaScript (Node/Sails, Backbone), CSS, Chef"
   team: sarah, david, joe
-  licenses:
-    midas: Public Domain (CC0)
   links: https://midas.18f.us/
   blog:
   - midas
@@ -328,8 +295,6 @@
   - myusa@gsa.gov
   stack: "Rails, Bootstrap, JavaScript, Chef"
   team: joe, nienhuis, yoz, papazian, diego
-  licenses:
-    myusa: Public Domain (CC0)
   links:
   - https://my.usa.gov
   status:
@@ -349,6 +314,5 @@
   - 18f/answers/issues
   stack: "Rails, Vagrant/Chef, JavaScript"
   team: yuda, ben, nienhuis, jen, justin, amos, sasha, nick, lindsay
-  licenses:
   links:
   status: Hold
