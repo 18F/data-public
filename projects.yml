@@ -148,9 +148,11 @@
   status:
 
 - project: "Common Acquisition Platform Tools"
-  name: C2
+  name: CAP
   github:
   - 18F/C2
+  - 18F/Mario
+  - 18F/gsa-advantage-scrape
   description: "A simplified, email-based purchasing approval tool for purchase card holders authorized to buy office supplies for the government."
   partner:
   - "General Services Administration"
@@ -159,13 +161,11 @@
   impact: "Over 80,000 U.S. Federal Government purchase card holders."
   milestones:
   contact: raphael.villas@gsa.gov, kelly.robinson@gsa.gov
-  stack: "Ruby, CSS, JavaScript/Node, Python"
-  team: raphy, ehlers, robert, sasha, diego
+  stack: "Ruby, JavaScript/Node, Python"
+  team: raphy, ehlers, robert, sasha, diego, afeld
   licenses:
     C2: Public Domain (CC0)
   links:
-  - https://github.com/18F/Mario
-  - https://github.com/18F/gsa-advantage-scrape
   - https://18f.github.io/C2/
   status:
 
