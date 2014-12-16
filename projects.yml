@@ -64,7 +64,7 @@
   contact:
   - sean.herron@gsa.gov
   stack:
-  team: sean, victor, ben, cm, shashank, annalee, jeremy
+  team: sean, victor, ben, cm, khandelwal, annalee, jeremy
   licenses:
   links:
   status:
@@ -85,7 +85,7 @@
   contact:
   - 18f/foia/issues
   stack:
-  team: majma, victor, eric
+  team: jackie, khandelwal, majma, eric, gramirez, jtag, victor
   licenses:
     foia: Public Domain (CC0)
     foia-hub: Public Domain (CC0)
@@ -148,11 +148,9 @@
   status:
 
 - project: "Common Acquisition Platform Tools"
-  name: CAP
+  name: C2
   github:
   - 18F/C2
-  - 18F/Mario
-  - 18F/gsa-advantage-scrape
   description: "A simplified, email-based purchasing approval tool for purchase card holders authorized to buy office supplies for the government."
   partner:
   - "General Services Administration"
@@ -161,11 +159,13 @@
   impact: "Over 80,000 U.S. Federal Government purchase card holders."
   milestones:
   contact: raphael.villas@gsa.gov, kelly.robinson@gsa.gov
-  stack: "Ruby, JavaScript/Node, Python"
-  team: raphy, jen, robert, sasha, diego, afeld
+  stack: "Ruby, CSS, JavaScript/Node, Python"
+  team: raphy, jen, robert, sasha, diego
   licenses:
     C2: Public Domain (CC0)
   links:
+  - https://github.com/18F/Mario
+  - https://github.com/18F/gsa-advantage-scrape
   - https://18f.github.io/C2/
   status:
 
