@@ -1,0 +1,134 @@
+- object: pif_projects
+  description: Projects undertaken by Presidential Innovation Fellows
+  used_by:
+    - 18F/18f.gsa.gov
+  properties:
+    - round:
+        type: Hash
+        description: The mapping of PIF round to projects
+        item_properties:
+          projects:
+            type: Array
+            description: List of PIF projects
+            item_properties:
+              - name:
+                  type: String
+                  description: Project name
+              - description:
+                  type: String
+                  description: Project description
+
+- object: projects
+  description: List of 18F projects appearing on the Dashboard
+  used_by:
+    - 18F/Dashboard
+    - 18F/Hub
+  primary_key: name
+  properties:
+    - project:
+        type: String
+        description: User-visible name of the project
+    - name:
+        type: String
+        description: Machine-readable slug used in url
+    - github:
+        type: Array of String
+        description: List of GitHub repos belonging to the project
+    - description:
+        type: String
+        description: Short description of the project
+    - partner:
+        type: String
+        description: Main partner (who is paying)
+    - partners:
+        type: Array of String
+        description: Other contributing partners
+    - impact:
+        type: String
+        description: Statement on the number of users impacted by the project
+    - stage:
+        type: String
+        description: Current stage of the project
+        options:
+          - discovery
+          - alpha
+          - beta
+          - live
+    - milestones:
+        type: Array of String
+        description: "The month and year of major project milestones, such as
+        the date a project started, began a new stage, recruited new
+        partners, overcame significant bureaucratic hurdles, etc."
+    - contact:
+        type: Array of String
+        description: Email addresses or URLs to preferred feedback mechanisms
+    - stack:
+        type: Array of String
+        description: Technology stack used to implement the project
+    - team:
+        type: String
+        description: List of 18F team members, comma separated
+        key_into: team
+    - licenses:
+        type: Hash
+        description: Hash from repository name to license name
+    - licenseBranch:
+        type: Hash
+        description: "Hash from repository name to the branch on which the
+          license resides (if not \"master\")"
+    - links:
+        type: Array of String
+        description: Other links to associate with the project
+    - status:
+        type: String
+        description: If set, will hide this project from the Dashboard
+        options:
+          - Hold
+
+- object: team
+  description: Public information about 18F team members
+  used_by:
+    - 18F/18f.gsa.gov
+    - 18F/Dashboard
+    - 18F/hub
+  primary_key: name
+  properties:
+    - name:
+        type: String
+        description: Internal username
+    - full_name:
+        type: String
+        description: Full name
+    - first_name:
+        type: String
+        description: First name
+    - last_name:
+        type: String
+        description: Last name
+    - pif-round:
+        type: Fixnum
+        description: "If a Presidential Innovation Fellow, the round the
+          member was a part of"
+    - project:
+        type: String
+        description: "Current main project or Presidential
+          Innovation Fellowship project"
+    - bio:
+        type: String
+        description: A brief bio
+    - location:
+        type: String
+        description: Location expressed as the nearest airport code
+    - languages:
+        type: Array of String
+        description: List of (computer) languages the member knows/uses
+    - technologies:
+        type: Array of String
+        description: List of (computer) technologies the member knows/uses
+    - specialties:
+        type: Array of String
+        description: List of general skills the member has
+    - hidden:
+        type: Boolean
+        description: "If true, this team member's info will be hidden from
+          18f.gsa.gov"
